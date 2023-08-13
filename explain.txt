@@ -1,0 +1,61 @@
+
+
+    The code opens the CSV file and creates a dictionary reader.
+    The code then iterates through each row in the file, creating an empty list for timestamps, packet_timestamps, order_ids, maker_order_ids, and taker_order_ids.
+    The code calculates the median of all values in the timestamp column to create a new variable called median.
+    The code will open the CSV file, and create a dictionary.
+    The code then iterates through the data in the CSV file, and creates an ordered list of timestamps.
+    The code starts by creating a list of timestamps and packet_timestamps.
+    It then loops through the list, checking for strictly increasing values.
+    If there is a discrepancy in the order of the timestamp or packet timestamp, it prints out that information to screen.
+    The code starts by creating two lists: timestamps and packet_timestamps.
+    The first list contains all of the timestaps while the second list contains only those with an integer value greater than zero (packet timestamps).
+    Then it creates a variable called msg_type which will store each row's message type as well as its timestamp and packet timestamp.
+    Next, it creates another variable called match_done_times which stores how many times this particular row was matched against other rows in csv file.
+    Finally, it loops through each row in csv reader and checks if any of these variables are not strictly increasing values (elements that do not have an integer value greater than zero).
+    If they are not strictly increasing values, then print out that information to screen so we can see what happened with them
+    The code iterates over each row in the csv_reader and checks for timestamp discrepancies.
+    If a discrepancy is found, then it prints out the message type and timestamp.
+    The code also iterates over each row in the csv_reader and checks for packet timestamp discrepancies.
+    If a discrepancy is found, then it prints out the message type and packet timestamp.
+    The code first checks if the message type is DONE.
+    If it is, then it will check to see if the corresponding Order ID exists.
+    If not, then a MATCH message discrepancy error will be printed out and an exception will be raised.
+    If the message type is NOT DONE, then it checks to see if the MakerOrderId and TakerOrderId exist in order_ids.
+    If they do not exist, then a MATCH message discrepancy error will be printed out and an exception will be raised.
+    The code is used to check for discrepancies in the order messages.
+    If a message type doesn't exist, it will print out an error message on the console.
+    The first if statement checks if the corresponding Order ID exists.
+    If it does not exist, then the code prints out a DONE message discrepancy - non-existing Order ID: followed by the row of data that was passed into this function.
+    The second if statement checks for Maker and Taker Order IDs and prints out a MATCH message discrepancy - non-existing Maker or Taker Order ID: followed by the row of data that was passed into this function.
+    The code starts by creating a list of order IDs.
+    Then it creates a list of maker orders and taker orders.
+    Next, the code calculates the time between MATCH and DONE messages for each message type.
+    The code then calculates summary data based on this information.
+    The first line is an import statement that imports the pandas module so we can use its functions to create lists in our program: import pandas as pd Next, we create two lists: one with all order IDs and another with all maker orders order_ids = [] maker_orders = [] taker_orders = [] Then, we calculate how long it takes for MATCH to finish (the difference between when the packet timestamp was sent and when it finished) using Timestamp from MessageType : match_done_times = {} for msg in mssg: match_done_times[msg['MessageType']] = int(msg['Timestamp']) - int(msg['PacketTimestamp'])
+    The code calculates the time between MATCH and DONE messages.
+    The code above is executed when a match message is received.
+    It calculates the time difference between the timestamp of the packet and that of the message, which is then stored in a list called match_done_times.
+    The code above is executed when a done message is received.
+    It calculates the time difference between the timestamp of the packet and that of its corresponding message, which is then stored in a list called done_times.
+    The code starts by creating a file object.
+    This is done with the open() function, which takes two parameters: the path to the file and an integer that specifies how many bytes should be read from the file.
+    The tell() method of this object returns how many bytes are currently in the file.
+    The code then calculates how much data has been written to this particular file so far, using len(timestamps) and num_updates .
+    It also calculates when each update was made, using datetime.fromtimestamp() .
+    Next, it creates a start timestamp for all updates in this particular packet (the first one), as well as an end timestamp for all updates in this particular packet (the last one).
+    It does so by taking datetime.fromtimestamp(packet_timestamps[0] / 1e9) , which will return a time stamp between 0 and 9999 seconds ago; then it subtracts 1e9 from that value to get a time stamp between 0 and 999 seconds ago; finally it divides that number by 1000 to get minutes ago or hours ago or days ago or whatever else you want your time stamps to be relative too.
+    It then creates order ids for lost packets with len
+    The code calculates the file size of a given file.
+    The code starts by calculating the start time and end time for a given file, which is calculated using datetime.fromtimestamp() methods.
+    It then calculates the number of updates in that file and finally calculates the total size of that file in bytes.
+    The code starts by importing the numpy library.
+    The code then creates a list of timestamps and stores them in a variable called start_timestamp, end_timestamp, start_packet_timestamp, and end_packet_timestamp.
+    The code then calculates the median for each timestamp to get the median update time.
+    Next, it calculates the median match done time by taking all of the match done times from 1 to num updates minus one and dividing that number by how many matches there were.
+    It prints out this data on screen as well as outputting it into a text file with some summary information about what is happening with these packets over time.
+    The code uses the pandas library to calculate the median and average of a set of timestamps.
+    The median is calculated by taking all the values in order from smallest to largest, then dividing that number by how many values are in the list.
+    The average is calculated by taking all the values and adding them together, then dividing that sum by how many values are in the list.
+
+
